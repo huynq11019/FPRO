@@ -1,4 +1,4 @@
-package com.mbamc.common.validator;
+package com.fpro.iam.infrastructure.support.constant;
 
 public interface ValidateConstraint {
 

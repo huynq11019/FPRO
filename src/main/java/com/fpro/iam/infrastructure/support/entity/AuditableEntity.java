@@ -41,4 +41,7 @@ public abstract class AuditableEntity implements Serializable {
     @LastModifiedDate
     @Column(name = "last_modified_at")
     protected Instant lastModifiedAt = Instant.now();
+
+    @Column(name = "is_deleted", nullable = false)
+    protected Boolean deleted = false;
 }
