@@ -10,10 +10,11 @@ spring:
       fail-on-empty-beans: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/mikepro
+    url: jdbc:mysql://ls-4858f5b1ba4c5b862804146ab97d20fce7e7f6c7.cjlmnrhfxrnx.ap-southeast-1.rds.amazonaws.com:3306/fpro
+#    url: jdbc:mysql://localhost:3306/mikepro
     #url=jdbc:postgresql://192.168.2.100:5432/nagakawa_guarantee
-    username: sa
-    password: 123123
+    username: dbmasteruser
+    password: $-_$0f2uX+z37fg3aXw_2pAs0unO%nkk
     hikari:
       auto-commit: false
       maximum-pool-size: 5
@@ -40,7 +41,7 @@ spring:
 #      hibernate.session.events.log.LOG_QUERIES_SLOWER_THAN_MS: 30
 #      hibernate.generate_statistics: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy

@@ -13,10 +13,11 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "users", indexes = {
-        @Index(name = "user_username_idx", columnList = "username"),
-        @Index(name = "user_deleted_idx", columnList = "deleted")
-})
+//@Table(name = "users", indexes = {
+//        @Index(name = "user_username_idx", columnList = "username"),
+//        @Index(name = "user_deleted_idx", columnList = "deleted")
+//})
+@Table(name = "users")
 @Getter
 @Setter
 @ToString
